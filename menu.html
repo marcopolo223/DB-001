@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Robert's Restaurant</title>
+  <meta name="description" content="Breakfast and lunch menus from Robert's Restaurant in Dania Beach, including daily specials, omelettes, sandwiches, and homemade plates.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Figtree:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">
+        <span class="wordmark-mark" aria-hidden="true">R</span>
+        <span class="wordmark-text">
+          <strong>Robert's</strong>
+          <em>Dania Beach</em>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="about.html">Our story</a>
+        <a href="visit.html">Visit</a>
+        <a class="nav-phone" href="tel:+19549259004">(954) 925-9004</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <header class="page-hero">
+      <p class="section-kicker">Printed menus & the whiteboard</p>
+      <h1>What we're cooking.</h1>
+      <p class="section-intro">Breakfast from the printed card. Lunch from the grill and the board. Coffee, tea, or soda comes with most breakfast plates.</p>
+    </header>
+
+    <div class="menu-tabs" role="tablist" aria-label="Menu sections">
+      <button type="button" role="tab" data-menu-tab="breakfast" aria-selected="true">Breakfast</button>
+      <button type="button" role="tab" data-menu-tab="lunch" aria-selected="false">Lunch</button>
+      <button type="button" role="tab" data-menu-tab="specials" aria-selected="false">Daily boards</button>
+      <button type="button" role="tab" data-menu-tab="sides" aria-selected="false">Sides & drinks</button>
+    </div>
+    <p class="menu-note">Prices are from our current printed breakfast menu and daily specials boards. They can change, and the kitchen writes a new board each morning.</p>
+
+    <div data-menu-panel="breakfast">
+      <article class="menu-block">
+        <header>
+          <h2>Two eggs, any style</h2>
+          <p>All plates include coffee, tea, or soda · potatoes, grits, or oatmeal · toast or biscuit & jelly. Sliced tomato + .95 · egg beaters or whites + 1.25</p>
+        </header>
+        <ul>
+          <li><span class="name">Two eggs</span><span class="price">7.50</span></li>
+          <li><span class="name">With bacon</span><span class="price">8.75</span></li>
+          <li><span class="name">With sausage links or patties</span><span class="price">8.75</span></li>
+          <li><span class="name">With boiled ham</span><span class="price">8.95</span></li>
+          <li><span class="name">With corned beef hash</span><span class="price">8.95</span></li>
+          <li><span class="name">With hamburger patty</span><span class="price">8.95</span></li>
+          <li><span class="name">With turkey sausage links</span><span class="price">8.95</span></li>
+          <li><span class="name">With smoked sausage</span><span class="price">8.95</span></li>
+          <li><span class="name">With baked Virginia ham</span><span class="price">9.50</span></li>
+          <li><span class="name">With grilled chicken breast</span><span class="price">9.50</span></li>
+          <li><span class="name">With pork chop</span><span class="price">9.50</span></li>
+          <li><span class="name">With N.Y. strip steak</span><span class="price">Market</span></li>
+        </ul>
+      </article>
+
+      <div class="menu-cols">
+        <article class="menu-block">
+          <header>
+            <h2>Robert's specialty omelettes</h2>
+            <p>Served with the same sides as two-egg plates</p>
+          </header>
+          <ul>
+            <li>
+              <span class="name">Kitchen Sink</span><span class="price">11.95</span>
+              <span class="desc">Ham, bacon, sausage, Swiss & American</span>
+            </li>
+            <li>
+              <span class="name">Vegetable</span><span class="price">9.25</span>
+              <span class="desc">Spinach, tomatoes, peppers, onions & mushrooms</span>
+            </li>
+            <li>
+              <span class="name">Country</span><span class="price">9.75</span>
+              <span class="desc">Sausage, bacon & American</span>
+            </li>
+            <li><span class="name">Spinach & feta</span><span class="price">9.25</span></li>
+            <li><span class="name">Ham, bacon, or sausage</span><span class="price">9.25</span></li>
+            <li><span class="name">Roast turkey</span><span class="price">9.75</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-block">
+          <header>
+            <h2>Create your own 3-egg omelette</h2>
+            <p>Start with three farm-fresh eggs · 7.75</p>
+          </header>
+          <ul>
+            <li>
+              <span class="name">Cheese</span><span class="price"></span>
+              <span class="desc">American .95 · Swiss, provolone, or cheddar 1.25 · feta 2.00</span>
+            </li>
+            <li>
+              <span class="name">Meat</span><span class="price"></span>
+              <span class="desc">Boiled ham 2.50 · bacon or patty sausage 2.75 · turkey links 3.75 · Virginia ham 3.50 · smoked sausage 3.95 · chicken breast 5.25 · roast turkey 5.95</span>
+            </li>
+            <li>
+              <span class="name">Vegetables</span><span class="price">.95</span>
+              <span class="desc">Tomatoes, peppers, onions, mushrooms, or spinach</span>
+            </li>
+            <li>
+              <span class="name">Bread upgrade</span><span class="price">.50</span>
+              <span class="desc">Bagel or English muffin. Cream cheese extra.</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <article class="menu-block">
+        <header>
+          <h2>Pancakes, challah French toast & Belgian waffle</h2>
+          <p>Coffee, tea, or soda included. Add bacon or sausage for 9.25 on the plate.</p>
+        </header>
+        <ul>
+          <li><span class="name">Pancakes (3), challah French toast, or Belgian waffle</span><span class="price">7.75</span></li>
+          <li><span class="name">With bacon or sausage</span><span class="price">9.25</span></li>
+          <li><span class="name">Sliced strawberries</span><span class="price">2.25</span></li>
+          <li><span class="name">Blueberries</span><span class="price">2.25</span></li>
+          <li><span class="name">Sliced banana</span><span class="price">1.25</span></li>
+          <li><span class="name">Nuts</span><span class="price">1.25</span></li>
+        </ul>
+      </article>
+
+      <article class="menu-block">
+        <header>
+          <h2>Breakfast specialties</h2>
+          <p>Favorites from the board and the printed card</p>
+        </header>
+        <ul>
+          <li>
+            <span class="name">Robert's 2×4</span><span class="price">from 10.25</span>
+            <span class="desc">Two pancakes, two eggs, two bacon, two sausage</span>
+          </li>
+          <li>
+            <span class="name">Nova platter</span><span class="price">14.95</span>
+            <span class="desc">With bagel & cream cheese</span>
+          </li>
+          <li>
+            <span class="name">Nova with eggs and onions</span><span class="price">from 16.00</span>
+            <span class="desc">Bagel and cream cheese, potatoes, grits, or oatmeal</span>
+          </li>
+          <li><span class="name">Homemade sausage gravy & biscuits with two eggs</span><span class="price">11.25</span></li>
+          <li><span class="name">Banana nut pancakes</span><span class="price">9.50</span></li>
+          <li><span class="name">Waffle with fresh strawberries</span><span class="price">10.00</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <div data-menu-panel="lunch" hidden>
+      <article class="menu-block">
+        <header>
+          <h2>Plates from the kitchen</h2>
+          <p>Hearty lunch plates. Many come with potato, vegetable, and bread. Deluxe your meal + 1.95</p>
+        </header>
+        <ul>
+          <li><span class="name">Chicken à la king over rice</span><span class="price">10.95</span></li>
+          <li><span class="name">Fresh roast turkey with stuffing</span><span class="price">12.95</span></li>
+          <li><span class="name">½ roast chicken with stuffing</span><span class="price">10.95</span></li>
+          <li><span class="name">London broil with mushroom gravy</span><span class="price">11.95</span></li>
+          <li><span class="name">Homemade baked meatloaf</span><span class="price">10.95</span></li>
+          <li><span class="name">Spaghetti and meatballs</span><span class="price">10.95</span></li>
+          <li><span class="name">Franks and beans</span><span class="price">10.95</span></li>
+          <li><span class="name">Broiled or blackened mahi mahi</span><span class="price">13.95</span></li>
+          <li><span class="name">Broiled fresh salmon with Greek salad</span><span class="price">16.95</span></li>
+          <li><span class="name">New York strip steak</span><span class="price">15.95</span></li>
+          <li><span class="name">12 chicken wings with fries</span><span class="price">10.75</span></li>
+        </ul>
+      </article>
+
+      <div class="menu-cols">
+        <article class="menu-block">
+          <header>
+            <h2>Sandwiches & hoagies</h2>
+            <p>Deli sandwiches on white, wheat, or rye with pickle and chips</p>
+          </header>
+          <ul>
+            <li><span class="name">Cuban sandwich</span><span class="price">10.50</span></li>
+            <li><span class="name">Reuben with cole slaw</span><span class="price">10.50</span></li>
+            <li><span class="name">BBQ pork or beef sandwich</span><span class="price">9.75</span></li>
+            <li><span class="name">Meatball parmigiana sub</span><span class="price">10.25</span></li>
+            <li><span class="name">Chicken salad sandwich</span><span class="price">8.95</span></li>
+            <li><span class="name">Tuna salad sandwich</span><span class="price">8.95</span></li>
+            <li><span class="name">Roast turkey deli sandwich</span><span class="price">10.50</span></li>
+            <li><span class="name">Triple-decker club</span><span class="price">11.95</span></li>
+            <li><span class="name">French dip</span><span class="price">10.95</span></li>
+          </ul>
+        </article>
+        <article class="menu-block">
+          <header>
+            <h2>Burgers, melts & platters</h2>
+          </header>
+          <ul>
+            <li>
+              <span class="name">Classic hamburger</span><span class="price">8.95</span>
+              <span class="desc">Lettuce, tomato, onion, pickles, and fries</span>
+            </li>
+            <li><span class="name">Turkey burger</span><span class="price">8.95</span></li>
+            <li><span class="name">Turkey burger diet platter with cottage cheese</span><span class="price">9.95</span></li>
+            <li><span class="name">Patty melt on rye</span><span class="price">10.95</span></li>
+            <li><span class="name">Tuna, chicken, or egg salad platter</span><span class="price">10.50</span></li>
+            <li><span class="name">Chef's salad</span><span class="price">11.95</span></li>
+            <li>
+              <span class="name">Soup 'n' sandwich</span><span class="price">11.25</span>
+              <span class="desc">Tuna, chicken, or egg salad with a bowl of homemade soup and a drink</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div data-menu-panel="specials" hidden>
+      <div class="gallery" style="margin-bottom:1.4rem">
+        <figure class="board">
+          <img src="images/breakfast-specials.jpg" alt="Breakfast specials whiteboard at Robert's.">
+        </figure>
+        <figure class="board">
+          <img src="images/lunch-specials.jpg" alt="Lunch specials whiteboard at Robert's.">
+        </figure>
+      </div>
+      <div class="menu-cols">
+        <article class="menu-block">
+          <header>
+            <h2>Breakfast specials</h2>
+            <p>Fresh squeezed O.J. 3.25</p>
+          </header>
+          <ul>
+            <li><span class="name">Homemade corned beef hash & eggs</span><span class="price">9.50</span></li>
+            <li><span class="name">N.Y. strip steak & eggs</span><span class="price">15.95</span></li>
+            <li><span class="name">Western omelette</span><span class="price">8.75</span></li>
+            <li><span class="name">Country omelette</span><span class="price">9.75</span></li>
+            <li><span class="name">Virginia ham & eggs</span><span class="price">9.50</span></li>
+            <li><span class="name">Pork chop & eggs</span><span class="price">9.50</span></li>
+            <li><span class="name">Turkey links & eggs</span><span class="price">8.95</span></li>
+            <li><span class="name">Banana nut pancakes</span><span class="price">9.50</span></li>
+            <li><span class="name">Waffle with fresh strawberries</span><span class="price">10.00</span></li>
+            <li><span class="name">Sausage gravy & biscuits with two eggs</span><span class="price">11.25</span></li>
+            <li><span class="name">Nova platter</span><span class="price">14.95</span></li>
+          </ul>
+        </article>
+        <article class="menu-block">
+          <header>
+            <h2>Lunch specials</h2>
+            <p>Ask what soup is on. Vegetable beef barley or chicken noodle, 4.50</p>
+          </header>
+          <ul>
+            <li><span class="name">Chicken à la king over rice</span><span class="price">10.95</span></li>
+            <li><span class="name">Fresh roast turkey with stuffing</span><span class="price">12.95</span></li>
+            <li><span class="name">Franks and beans</span><span class="price">10.95</span></li>
+            <li><span class="name">½ roast chicken with stuffing</span><span class="price">10.95</span></li>
+            <li><span class="name">London broil with mushroom gravy</span><span class="price">11.95</span></li>
+            <li><span class="name">Homemade baked meatloaf</span><span class="price">10.95</span></li>
+            <li><span class="name">Spaghetti and meatballs</span><span class="price">10.95</span></li>
+            <li><span class="name">Meatball parmigiana sub</span><span class="price">10.25</span></li>
+            <li><span class="name">Cuban sandwich</span><span class="price">10.50</span></li>
+            <li><span class="name">BBQ pork or beef sandwich</span><span class="price">9.75</span></li>
+            <li><span class="name">Broiled or blackened mahi</span><span class="price">13.95</span></li>
+            <li><span class="name">Broiled salmon with Greek salad</span><span class="price">16.95</span></li>
+            <li><span class="name">Salad platter</span><span class="price">10.50</span></li>
+            <li><span class="name">Reuben with cole slaw</span><span class="price">10.50</span></li>
+            <li><span class="name">Turkey burger diet platter</span><span class="price">9.95</span></li>
+            <li><span class="name">New York strip steak</span><span class="price">15.95</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div data-menu-panel="sides" hidden>
+      <div class="menu-cols">
+        <article class="menu-block">
+          <header>
+            <h2>Sides</h2>
+          </header>
+          <ul>
+            <li><span class="name">Hash browns or home fries</span><span class="price">3.25</span></li>
+            <li><span class="name">Grits, cup / bowl</span><span class="price">2.25 / 3.25</span></li>
+            <li><span class="name">Bacon or sausage</span><span class="price">3.95</span></li>
+            <li><span class="name">Corned beef hash</span><span class="price">4.25</span></li>
+            <li><span class="name">French fries</span><span class="price">2.95</span></li>
+            <li><span class="name">Sweet potato fries or onion rings</span><span class="price">3.95</span></li>
+            <li><span class="name">Potato salad, cole slaw, or sliced tomatoes</span><span class="price">2.95</span></li>
+            <li><span class="name">Homemade cornbread</span><span class="price">2.50</span></li>
+            <li><span class="name">Bagel with cream cheese</span><span class="price">3.25</span></li>
+          </ul>
+        </article>
+        <article class="menu-block">
+          <header>
+            <h2>Drinks</h2>
+          </header>
+          <ul>
+            <li><span class="name">Coffee, hot tea, iced tea, or soda</span><span class="price">2.95</span></li>
+            <li><span class="name">Fresh squeezed orange juice</span><span class="price">3.25</span></li>
+            <li><span class="name">Iced coffee or hot chocolate</span><span class="price">2.95</span></li>
+            <li><span class="name">Herbal tea</span><span class="price">3.25</span></li>
+            <li><span class="name">Juice</span><span class="price">3.25</span></li>
+            <li><span class="name">Milk</span><span class="price">2.50–3.00</span></li>
+          </ul>
+        </article>
+      </div>
+      <figure class="frame" style="margin-top:1.2rem">
+        <img src="images/breakfast-menu.jpg" alt="Printed Robert's breakfast menu with two-egg plates, omelettes, and griddle items.">
+      </figure>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>Robert's Restaurant</h2>
+        <p>Homemade breakfast and lunch in Dania Beach since 1993.</p>
+      </div>
+      <div>
+        <p>1320 Stirling Rd, Ste 1C<br>Dania Beach, FL 33004</p>
+        <p><a href="tel:+19549259004">(954) 925-9004</a></p>
+      </div>
+      <div>
+        <p>Open daily 6:00 a.m. – 3:00 p.m.</p>
+        <p><a href="index.html">Home</a> · <a href="about.html">Our story</a> · <a href="visit.html">Visit</a></p>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <p>© <span data-year>2026</span> Robert's Restaurant. Prices from our printed menus and daily boards, and may change.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
